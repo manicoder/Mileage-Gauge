@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:keepScreenOn="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainLayout">
+        <TextView
+            android:text="(vehicle)"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/VehicleText"
+            android:layout_margin="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/EpaMileageLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CityText"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CombinedText"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/HighwayText"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_weight="1"
+        android:layout_gravity="fill_vertical|center_horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="DANGER TO MANIFOLD"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/DangerToManifold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="invisible" />
+        <TextView
+            android:text="0.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AverageMPGText"
+            android:gravity="center_horizontal"
+            android:textSize="100dip" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayout1"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:text="Instant MPG"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView1"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="Throttle %"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView2"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="Instant MPH"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView3"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/ThrottleText"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:textSize="40dip"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/MPHText"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:textSize="40dip"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/InstantMPGText"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:textSize="40dip"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center" />
+        </GridLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/linearLayout3">
+                <TextView
+                    android:text="Miles"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/MilesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp" />
+                <TextView
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/TotalMiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp" />
+                <TextView
+                    android:text="Gallons"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/GallonsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp" />
+                <TextView
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/TotalGallons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/ResetButton"
+                app:srcCompat="@drawable/ic_autorenew_black_24px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hapticFeedbackEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BackButton" />
+</LinearLayout>
